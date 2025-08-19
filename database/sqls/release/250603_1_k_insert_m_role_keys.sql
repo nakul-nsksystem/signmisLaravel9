@@ -1,0 +1,1 @@
+INSERT INTO `m_role_keys` (`id`,`m_role_key_category_id`,`order_no`,`name`,`explanation`,`system_flg`,`memo`,`created_at`,`updated_at`,`deleted_at`) VALUES (35,11,440,'remote_branch_products_report-privilege','他拠点生産商品集計表権限',1,'10~:アクセス可能','2025-06-03 16:36:24','2025-06-03 16:36:24',NULL);

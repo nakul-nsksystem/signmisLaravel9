@@ -1,0 +1,1 @@
+UPDATE `m_matrix_details` SET `val1`='6000.0000' WHERE (`id` in ( 103 , 107 , 110 ,115)) ; 

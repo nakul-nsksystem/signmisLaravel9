@@ -1,0 +1,19 @@
+
+{
+    "graphics": [
+                    "jpeg" ,"jpg","JPEG","JPG","jpe","jfif","pjpeg","pjp",
+                    "png",
+                    "gif",
+                    "tif","tiff",
+                    "PSD","psd","PDD","pdd","PSB","psb"
+                ] ,
+
+    "cad"     : [   
+                    "EPS","eps" ,
+                    "ai",
+                    "svg","svgz",
+                    "ARD",
+                    "pdf"
+                ] 
+
+} 

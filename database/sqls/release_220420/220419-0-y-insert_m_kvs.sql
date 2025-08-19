@@ -1,0 +1,1 @@
+INSERT INTO `m_kvs` VALUES ('8020021', '8020', '21', '21', '生産管理', null, null, 'production', 'fa-print', null, null, null, null, null, null, null, null, '0', null, null, '0', '0', '2022-04-18 17:33:26', '2022-04-18 17:33:26', null);

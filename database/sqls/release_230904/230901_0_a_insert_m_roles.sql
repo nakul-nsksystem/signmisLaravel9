@@ -1,0 +1,15 @@
+INSERT INTO `m_role_key_categories` (`id`, `order_no`, `name`, `explanation`) VALUES ('12', '75', 'analyse-role', '分析関係');
+INSERT INTO `m_role_keys` (`id`, `m_role_key_category_id`, `order_no`, `name`, `explanation`, `system_flg`, `memo`) VALUES ('29', '12', '751', 'production_analyse-privilege', '生産実績分析権限', '1', '10~:アクセス可能');
+INSERT INTO `m_role_keys` (`id`, `m_role_key_category_id`, `order_no`, `name`, `explanation`, `system_flg`, `memo`) VALUES ('30', '12', '752', 'delivery_analyse-privilege', '納品分析権限', '1', '10~:アクセス可能');
+INSERT INTO `m_role_keys` (`id`, `m_role_key_category_id`, `order_no`, `name`, `explanation`, `system_flg`, `memo`) VALUES ('31', '12', '753', 'sales_analyse-privilege', '売上分析権限', '1', '10~:アクセス可能担当者 20:~担当者ログインユーザー以外検索可能 100:全権');
+INSERT INTO `m_role_keys` (`id`, `m_role_key_category_id`, `order_no`, `name`, `explanation`, `system_flg`, `memo`) VALUES ('32', '12', '754', 'purchases_analyse-privilege', '仕入分析権限', '1', '10~:アクセス可能');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('6', '29', '100');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('6', '30', '100');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('6', '31', '100');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('6', '32', '100');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('8', '31', '10');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('18', '30', '10');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('18', '31', '10');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('18', '32', '20');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('21', '29', '10');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('21', '30', '10');

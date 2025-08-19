@@ -1,0 +1,1 @@
+INSERT INTO `m_role_keys` VALUES ('15', '1', '11', 't_project-price-view-permission', '物件単価金額関係表示権限', '1', '2021-06-02 11:43:05', '2021-06-02 11:43:05', null);

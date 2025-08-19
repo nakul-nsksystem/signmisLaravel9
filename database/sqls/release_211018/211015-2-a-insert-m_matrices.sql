@@ -1,0 +1,1 @@
+INSERT INTO `m_matrices` (`id`, `order_no`, `cd`, `name`, `k1_name`, `k1_op`, `val1_name`, `created_m_user_id`, `updated_m_user_id`, `created_at`, `updated_at`) VALUES ('53', '401', 'sheetCut_cost_per', 'M??? シートカット サイズによる掛け率', '以上㎟', '2', '掛け率', '0', '0', '2021-10-15 17:59:55', '2021-10-15 17:59:55');

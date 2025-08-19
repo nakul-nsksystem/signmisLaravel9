@@ -1,0 +1,26 @@
+[
+    {
+        "extension"   : "ai" ,
+        "limitMb"     : 256 
+    }  ,
+    {
+        "extension"   : "pdf" ,
+        "limitMb"     : 500 
+    } ,
+    {
+        "extension"   : "jpeg" ,
+        "limitMb"     : 500 
+    } ,
+    {
+        "extension"   : "jpg" ,
+        "limitMb"     : 500 
+    } ,
+    {
+        "extension"   : "png" ,
+        "limitMb"     : 100 
+    } ,
+    {
+        "extension"   : "psd" ,
+        "limitMb"     : 1024 
+    } 
+]

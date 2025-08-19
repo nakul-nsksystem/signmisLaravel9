@@ -1,0 +1,5 @@
+
+INSERT INTO `m_processes` VALUES ('54', '25', '1', 'エッジバンド貼り', 'is_01', '0', '1', '0', null, null, null, null, null, null, null, null, null, null, '1.0000', '0', '1', '2', null, '50', 'tmp_edgebandTagType', null, null, 'n_01', '9010003', 'n_02', null, '1.0000', '1', '1', '2', '3600', '50', 'tmp_edgebandTagType', null, '秒', 'n_01', '9010003', 'n_02', null, '1.0000', '2021-05-25 19:07:10', '2021-05-26 10:09:25', null);
+INSERT INTO `m_processes` VALUES ('55', '25', '2', '組立', 'is_02', '0', '1', '0', null, null, null, null, null, null, null, null, null, null, '1.0000', '0', '1', '3', '1', null, null, null, null, null, '9010003', 'n_06', null, '1.0000', '1', '1', '3', '3600', null, null, null, '秒', null, '9010003', 'n_06', null, '1.0000', '2021-05-25 19:20:26', '2021-05-26 10:09:49', null);
+INSERT INTO `m_processes` VALUES ('56', '10', '1', '作業', null, '0', '1', '0', null, null, null, null, null, null, null, null, null, null, '1.0000', '0', '1', '0', null, null, null, null, null, null, null, null, null, '1.0000', '1', '1', '3', '3600', null, null, null, null, null, '9010003', 'n_01', null, '1.0000', '2021-05-26 16:44:56', '2021-05-26 16:44:56', null);
+

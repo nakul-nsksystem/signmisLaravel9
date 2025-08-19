@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS `t_project_constructions`;
+CREATE TABLE `t_project_constructions` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `t_project_id` int NOT NULL,
+  `construction_at` datetime NOT NULL COMMENT '施行日',
+  `start_time` time DEFAULT NULL COMMENT '施行開始時刻',
+  `end_time` time DEFAULT NULL COMMENT '施行終了時刻',
+  `construction_to` varchar(1024)  DEFAULT NULL COMMENT '施工先',
+  `construction_address` varchar(1024)  DEFAULT NULL COMMENT '施工先住所',
+  `construction_person_name` varchar(255)  DEFAULT NULL COMMENT '施工先の担当者名',
+  `construction_tel` varchar(45)  DEFAULT NULL COMMENT '施工先連絡先',
+  `is_night_work` tinyint(1) NOT NULL DEFAULT '0' COMMENT '夜間作業フラグ',
+  `is_holiday_work` tinyint(1) NOT NULL DEFAULT '0' COMMENT '休日作業フラグ',
+  `memo` varchar(1024)  DEFAULT NULL,
+  `created_m_user_id` int DEFAULT NULL COMMENT '作成担当者',
+  `updated_m_user_id` int DEFAULT NULL COMMENT '更新担当者',
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '作成日',
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新日',
+  `deleted_at` datetime DEFAULT NULL COMMENT '削除日',
+  PRIMARY KEY (`id`),
+  KEY `fk_t_project_constructions_t_project_id` (`t_project_id`),
+  KEY `created_m_user_id_idx` (`created_m_user_id`),
+  KEY `updated_m_user_id_idx` (`updated_m_user_id`),
+  CONSTRAINT `fk_t_project_constructions_created_m_user_id` FOREIGN KEY (`created_m_user_id`) REFERENCES `m_users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `fk_t_project_constructions_t_project_id` FOREIGN KEY (`t_project_id`) REFERENCES `t_projects` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_t_project_constructions_updated_m_user_id` FOREIGN KEY (`updated_m_user_id`) REFERENCES `m_users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci COMMENT='物件施工ユーザー';

@@ -1,0 +1,19 @@
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_01' WHERE (`id` = '17');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_02' WHERE (`id` = '24');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_41' WHERE (`id` = '31');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_02' WHERE (`id` = '32');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_07' WHERE (`id` = '33');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_07' WHERE (`id` = '34');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_12' WHERE (`id` = '36');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_12' WHERE (`id` = '37');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_17' WHERE (`id` = '39');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_17' WHERE (`id` = '40');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_22' WHERE (`id` = '42');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_22' WHERE (`id` = '43');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_27' WHERE (`id` = '45');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_27' WHERE (`id` = '46');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_32' WHERE (`id` = '48');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_32' WHERE (`id` = '49');
+UPDATE `m_processes` SET `operation_speed_matrix_key_01_column` = 'm_kv_id_01' WHERE (`id` = '58');
+UPDATE `m_processes` SET `prepare_per_qty_speed_matrix_key_01_column` = 'm_kv_id_41' WHERE (`id` = '30');
+

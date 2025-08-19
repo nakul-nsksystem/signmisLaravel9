@@ -1,0 +1,2 @@
+INSERT INTO `m_matrices` VALUES ('52', null, '711', 'postCartain_strong_grommets_mp', 'M732 幕仕上げ - ハトメ補強箇所単価', null, '1', null, null, null, null, null, null, '箇所単価', null, '0', '0', '2021-09-10 19:06:38', '2021-09-10 19:06:38', null);
+INSERT INTO `m_matrix_details` VALUES ('174', '52', '1', '', 'ハトメ補強箇所単価', null, null, null, null, null, null, '60.0000', null, null, null, null, null, '0', '0', '2021-09-10 19:07:28', '2021-09-10 19:07:28', null);

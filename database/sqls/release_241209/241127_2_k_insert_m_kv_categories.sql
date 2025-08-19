@@ -1,0 +1,3 @@
+
+INSERT INTO `m_kv_categories` (`id`,`order_no`,`kv_key`,`kv_category_name`,`kv_short_name`,`description`,`system_memo`,`is_user_editable`,`created_at`,`updated_at`,`deleted_at`) VALUES (6000,6000,'t_user_points-point_type','ユーザーポイントタイプ',NULL,NULL,NULL,0,'2024-11-08 10:42:19','2024-11-08 10:42:19',NULL);
+INSERT INTO `m_kv_categories` (`id`,`order_no`,`kv_key`,`kv_category_name`,`kv_short_name`,`description`,`system_memo`,`is_user_editable`,`created_at`,`updated_at`,`deleted_at`) VALUES (6010,6010,'t_user_points-point_grant_type','ユーザーポイント付与タイプ',NULL,NULL,'g_01:物件付与(sales/prod)',0,'2024-11-08 10:43:20','2024-11-08 10:43:20',NULL);

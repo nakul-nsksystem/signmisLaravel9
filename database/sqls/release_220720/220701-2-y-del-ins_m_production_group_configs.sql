@@ -1,0 +1,23 @@
+delete from m_production_group_configs where id < 22 ; 
+
+INSERT INTO `m_production_group_configs` VALUES ('1', '1', '1650001', 'delivery_at', 'material', 'm_production_mode', 'm_production_option', null, '2', '2022-01-11 16:12:18', '2022-01-11 16:12:18');
+INSERT INTO `m_production_group_configs` VALUES ('2', '2', '1650001', 'delivery_at', 'material', 'm_production_mode', 'm_production_option', null, '2', '2022-01-11 16:12:24', '2022-01-11 16:12:24');
+INSERT INTO `m_production_group_configs` VALUES ('3', '3', '1650001', 'delivery_at', 'material', 'm_production_mode', 'm_production_option', null, '2', '2022-01-11 16:12:31', '2022-04-22 10:31:48');
+INSERT INTO `m_production_group_configs` VALUES ('4', '1', '1650002', 'delivery_at', 'lami', null, null, null, '2', '2022-01-13 09:22:13', '2022-01-13 09:22:13');
+INSERT INTO `m_production_group_configs` VALUES ('5', '2', '1650002', 'delivery_at', 'lami', null, null, null, '2', '2022-01-13 09:22:19', '2022-01-13 09:22:19');
+INSERT INTO `m_production_group_configs` VALUES ('6', '3', '1650002', 'delivery_at', 'lami', null, null, null, '2', '2022-01-13 09:22:25', '2022-01-13 09:22:25');
+INSERT INTO `m_production_group_configs` VALUES ('7', '1', '1650003', 'delivery_at', 'material', 'process', 'm_production_mode', null, '2', '2022-01-27 14:53:45', '2022-07-01 19:35:30');
+INSERT INTO `m_production_group_configs` VALUES ('8', '1', '1650005', 'delivery_at', 'process', null, null, null, '2', '2022-01-27 14:53:56', '2022-07-01 19:36:21');
+INSERT INTO `m_production_group_configs` VALUES ('9', '1', '1650007', 'delivery_at', null, null, null, null, '2', '2022-01-27 14:54:02', '2022-01-27 14:54:02');
+INSERT INTO `m_production_group_configs` VALUES ('10', '1', '1650008', 'delivery_at', 'process', null, null, null, '2', '2022-01-27 14:54:06', '2022-07-01 19:36:10');
+INSERT INTO `m_production_group_configs` VALUES ('11', '2', '1650900', 'delivery_at', null, null, null, null, '2', '2022-01-27 14:54:15', '2022-01-27 14:54:15');
+INSERT INTO `m_production_group_configs` VALUES ('12', '2', '1650008', 'delivery_at', 'process', null, null, null, '2', '2022-01-27 14:54:19', '2022-07-01 19:36:03');
+INSERT INTO `m_production_group_configs` VALUES ('13', '2', '1650007', 'delivery_at', null, null, null, null, '2', '2022-01-27 14:54:23', '2022-01-27 14:54:23');
+INSERT INTO `m_production_group_configs` VALUES ('14', '2', '1650005', 'delivery_at', 'process', null, null, null, '2', '2022-01-27 14:54:29', '2022-07-01 19:36:33');
+INSERT INTO `m_production_group_configs` VALUES ('15', '2', '1650003', 'delivery_at', 'material', 'process', 'm_production_mode', null, '2', '2022-01-27 14:54:35', '2022-07-01 19:35:44');
+INSERT INTO `m_production_group_configs` VALUES ('16', '3', '1650003', 'delivery_at', 'material', 'process', 'm_production_mode', null, '2', '2022-01-27 14:54:46', '2022-07-01 19:35:48');
+INSERT INTO `m_production_group_configs` VALUES ('17', '3', '1650005', 'delivery_at', 'process', null, null, null, '2', '2022-01-27 14:54:52', '2022-07-01 19:36:42');
+INSERT INTO `m_production_group_configs` VALUES ('18', '3', '1650007', 'delivery_at', null, null, null, null, '2', '2022-01-27 14:54:56', '2022-01-27 14:54:56');
+INSERT INTO `m_production_group_configs` VALUES ('19', '3', '1650008', 'delivery_at', 'process', null, null, null, '2', '2022-01-27 14:55:00', '2022-07-01 19:35:58');
+INSERT INTO `m_production_group_configs` VALUES ('20', '3', '1650900', 'delivery_at', null, null, null, null, '2', '2022-01-27 14:55:03', '2022-01-27 14:55:03');
+INSERT INTO `m_production_group_configs` VALUES ('21', '1', '1650900', 'delivery_at', null, null, null, null, '2', '2022-01-27 19:01:06', '2022-01-27 19:01:06');

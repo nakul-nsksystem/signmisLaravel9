@@ -1,0 +1,9 @@
+// fonts
+@import 'app-fonts';
+@include font-face('NotoSansJapanese', '/fonts/NotoSansJP-Regular.otf', null, null, otf);
+@include font-face('IPAMincho', '/fonts/ipam.ttf', null, null, ttf);
+
+// BaseReport
+@import 'app-report';
+
+// CustomReport

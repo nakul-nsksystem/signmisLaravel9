@@ -1,0 +1,37 @@
+Laravel 8 to 9 Upgrade Guide (Summary)
+
+# Upgrading To 9.0 From 8.x
+
+## High Impact Changes
+- PHP 8.0.2 required
+- Update composer dependencies: laravel/framework to ^9.0, nunomaduro/collision to ^6.1
+- Replace facade/ignition with spatie/laravel-ignition
+- Update pusher/pusher-php-server to ^5.0
+- Review first-party package upgrades
+
+## Medium Impact Changes
+- BelongsToMany relationship methods: firstOrNew, firstOrCreate, updateOrCreate
+- Custom Casts & null handling
+- Default HTTP client timeout
+- PHP return types added to core classes
+- Postgres schema config renamed to search_path
+- The assertDeleted method replaced by assertModelMissing
+- The lang directory moved to root
+- The password rule renamed to current_password
+- when/unless methods closure handling
+- Unvalidated array keys always excluded
+
+## Other Changes
+- Flysystem 3.x migration
+- Symfony Mailer replaces SwiftMailer
+- Trusted proxies middleware update
+- Validation, session, queue, and testing changes
+- Miscellaneous package and helper updates
+
+Estimated upgrade time: 30 minutes
+
+For full guide, see https://laravel.com/docs/9.x/upgrade
+
+---
+
+(Extracted content from https://laravel.com/docs/9.x/upgrade)

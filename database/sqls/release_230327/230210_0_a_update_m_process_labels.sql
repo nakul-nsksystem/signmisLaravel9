@@ -1,0 +1,3 @@
+/*現地反映済*/
+INSERT INTO `m_process_labels` (`id`, `m_process_category_id`, `order_no`, `is_computed_name`, `is_not`, `postfix`, `formula`, `target_column`, `created_at`, `updated_at`) VALUES ('204', '5', '922', 'IsRope4ropeOut|dvalue', '0', 'mm', 'Rope4ropeOutLength|dvalue', 'display_05', '2023-02-10 13:06:26', '2023-02-10 13:15:11');
+INSERT INTO `m_process_labels` (`id`, `m_process_category_id`, `order_no`, `is_computed_name`, `is_not`, `postfix`, `formula`, `target_column`, `created_at`, `updated_at`) VALUES ('205', '5', '923', 'IsRope4ropeOut|dvalue', '0', '本/枚', 'NumOfRopes4rope|dvalue', 'display_05', '2023-02-10 13:08:06', '2023-02-10 13:08:06');

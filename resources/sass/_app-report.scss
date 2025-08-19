@@ -1,0 +1,45 @@
+:root {
+    /* リリースモード時はtransparent(透明) 表示切替ボタンで変数値を変更する */
+    --style-mode-production: transparent;
+}
+
+body {
+    /* HTML表示・PDF出力時の仮想DOMで見た目がそんなに違わない日本語フォントを指定 */
+    font-family: "NotoSansJapanese";
+    /* 要素間の余白無し */
+    margin: 0mm;
+    /* 改ページ時に帯部分にbody要素が印字しないように(白だと印字しない) */
+    background: white;
+}
+
+.sheet {
+    /* ページレイアウト[<section class="sheet">]を1ページ単位とする */
+    /* 内容がボックスに収まらない場合収まらない部分は非表示 */
+    overflow: hidden;
+    /* 移動するときの基準が元の位置から */
+    position: relative;
+    /* 要素幅[width]と高さ[height]の中にpaddingとborderを含めるかどうか */
+    box-sizing: border-box;
+    /* always:要素の後で必ず改ページが行われるように強制 */
+    page-break-after: always;
+    /* 紙の色[白]を指定 */
+    background: white;
+}
+
+.sheet:last-child {
+    /* 最後の改ページを防ぐ */
+    page-break-after: avoid;
+}
+
+.btn-view-change {
+    /* 表示切替ボタン */
+    position:absolute;
+    right:10px;
+}
+
+@media print {
+    .no-print {
+        /* 印字しない項目は[class="no-print"]を指定 */
+        display: none;          
+    }
+}

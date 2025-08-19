@@ -1,0 +1,2 @@
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `g_01`, `g_02`, `is_user_editable`, `created_m_user_id`, `updated_m_user_id`) VALUES ('8020011', '8020', '11', '11', '検索項目', 'search', 'fa-search', '0', '0', '0');
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `g_01`, `g_02`, `is_user_editable`, `created_m_user_id`, `updated_m_user_id`) VALUES ('8020999', '8020', '999', '999', 'その他', 'others', 'fa-ellipsis-h', '0', '0', '0');

@@ -1,0 +1,25 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// App Bootstrap Setting
+@import 'app-bootstrap';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// vue-Select 
+@import "vue-select/src/scss/vue-select.scss";
+
+
+// Font Awesome
+// $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+// @import '~@fortawesome/fontawesome-free/scss/fontawesome';
+// @import '~@fortawesome/fontawesome-free/scss/solid';
+
+// Application
+@import 'application';
+
+

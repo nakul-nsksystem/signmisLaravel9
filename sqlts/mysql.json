@@ -1,0 +1,29 @@
+{
+    "client":"mysql",
+    "connection": {
+      "host": "192.168.0.",
+      "user": "root",
+      "password": "mysql",
+      "database" : "_signmis_"
+    },
+
+    "typeOverrides": {
+    } ,
+    "typeMap": {
+        "boolean": ["tinyint"]
+    },
+
+    "tables" : [
+        "_signmis_mike.v_complete_sales"
+    ] ,
+
+    "filename": "VCompleteSale",
+
+    "interfaceNameFormat": "VCompleteSale" ,
+
+    "extends": {
+        "signmis.v_complete_sales": ""
+    },
+
+    "template": "./sqlts/template.handlebars"
+}

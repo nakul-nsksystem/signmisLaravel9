@@ -1,0 +1,1 @@
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `is_user_editable`, `created_m_user_id`, `updated_m_user_id`) VALUES ('1610005', '1610', '5', '5', '秒', '0', '0', '0') ; 

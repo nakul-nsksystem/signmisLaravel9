@@ -1,0 +1,35 @@
+@import '~bootstrap/scss/variables';
+
+@import "app-variables" ; 
+
+.validation-error {
+    padding-top:  ($spacer * .25)  ; 
+    padding-bottom:  ($spacer * 1)  ; 
+    color:$lightDangerColor ;
+    height: 0px ;       /* height=0とdisplay=blockでレイアウトを崩さないようにする */
+    display: block ;    
+    font-size: $font-size-sm ;  /* 8/16px = 0.5em */
+    &:empty{
+        padding-top:  0  ; 
+        padding-bottom:  0  ; 
+    }
+}
+
+.validation-info {
+    padding-top:  ($spacer * .25)  ; 
+    padding-bottom:  ($spacer * 1)  ; 
+    color:$lightInfoColor ;
+    height: 0px ;       /* height=0とdisplay=blockでレイアウトを崩さないようにする */
+    display: block ;    
+    font-size: $font-size-sm ;  /* 8/16px = 0.5em */
+    &:empty{
+        padding-top:  0  ; 
+        padding-bottom:  0  ; 
+    }
+}
+
+.validation-observer-error {
+    /*color:#ff69b4 ; */ 
+    color:$lightDangerColor; 
+    
+}

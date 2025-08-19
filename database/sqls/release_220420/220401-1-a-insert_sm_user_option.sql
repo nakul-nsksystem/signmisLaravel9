@@ -1,0 +1,5 @@
+INSERT INTO `sm_user_options` (`id`, `key_m_kv_id`, `order_no`, `name`, `application`, `option_01`, `option_02`, `default_value`) VALUES ('101', '8020011', '101', '物件検索 受注拠点デフォルト設定', 't_project', 'boolean', 'm_branch_id', '1');
+INSERT INTO `sm_user_options` (`id`, `key_m_kv_id`, `order_no`, `name`, `application`, `option_01`, `option_02`, `default_value`) VALUES ('102', '8020011', '102', '物件検索 生産拠点デフォルト設定', 't_project', 'boolean', 'm_branch', '0');
+INSERT INTO `sm_user_options` (`id`, `key_m_kv_id`, `order_no`, `name`, `application`, `option_01`, `option_02`, `default_value`) VALUES ('111', '8020011', '111', '物件検索 営業担当デフォルト設定', 't_project', 'boolean', 'sales_m_user_id', '1');
+INSERT INTO `sm_user_options` (`id`, `key_m_kv_id`, `order_no`, `name`, `application`, `option_01`, `option_02`, `default_value`) VALUES ('112', '8020011', '112', '物件検索 制作担当デフォルト設定', 't_project', 'boolean', 'operator_m_user_id', '0');
+INSERT INTO `sm_user_options` (`id`, `key_m_kv_id`, `order_no`, `name`, `application`, `option_01`, `default_value`) VALUES ('151', '8020011', '151', '物件検索 検索条件保存', 't_project', 'strings', '0');

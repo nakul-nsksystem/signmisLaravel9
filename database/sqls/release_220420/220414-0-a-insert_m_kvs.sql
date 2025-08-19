@@ -1,0 +1,1 @@
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `g_01`, `g_02`, `is_user_editable`, `created_m_user_id`, `updated_m_user_id`) VALUES ('8020012', '8020', '12', '12', '保存済検索履歴', 'saved_search', 'fa-search', '0', '0', '0');

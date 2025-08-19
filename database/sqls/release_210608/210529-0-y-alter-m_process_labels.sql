@@ -1,0 +1,6 @@
+ALTER TABLE `m_process_labels` 
+ADD COLUMN `is_not` TINYINT(1) NULL DEFAULT 0 COMMENT '使用フラグの判定を逆にする' AFTER `is_computed_name`;
+
+ALTER TABLE `m_process_labels` 
+CHANGE COLUMN `created_at` `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+CHANGE COLUMN `updated_at` `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP ;

@@ -1,0 +1,2 @@
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `g_01`, `g_02`, `g_03`, `g_04`, `g_05`, `g_06`, `is_user_editable`, `memo`, `created_m_user_id`, `updated_m_user_id`, `created_at`, `updated_at`) VALUES ('1370008', '1370', '8', '8', 'カッティングシート', '㎡', '1', 'mm', '1530001', '0.001', '1', '0', 'アプリケーション・ダイノック ・カッティングシート・マグネットシート', '0', '0', '2000-01-01 00:00:00', '2000-01-01 00:00:00');
+UPDATE `m_kvs` SET `order_no` = '99' WHERE (`id` = '1370007');

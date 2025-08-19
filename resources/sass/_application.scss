@@ -1,0 +1,219 @@
+@use 'sass:math';
+
+@import '~bootstrap/scss/variables';
+
+
+@import 'app-validation';   // Validation
+@import 'app-modal' ;// Modal 
+@import "app-variables" ;   // 
+
+// Colors
+
+// 16px未満だとiPhoneで勝手に拡大してしまう
+.form-control ,
+.custom-control-input,
+.custom-select {
+    font-size: 1rem !important;
+  }
+/*
+@media (min-width: 576px) {
+  input {
+    font-size: 0.;
+  }
+}
+*/
+
+.app-contents-container
+{
+    //background-color: $gray-700 ;
+    background-color: $secondalyDark ;
+    // margin-left: -$grid-gutter-width / 2; 
+    margin-left: math.div(-$grid-gutter-width, 2);
+    // margin-left:  calc($grid-gutter-width/ 2);
+    
+    // margin-right: -$grid-gutter-width / 2;
+    margin-right: math.div(-$grid-gutter-width, 2);
+    // margin-right:  calc($grid-gutter-width/ 2);
+
+    padding-left: $grid-gutter-width * 0.75 ;
+    padding-right: $grid-gutter-width * 0.75 ;
+    padding-top : $grid-gutter-width * 0.25 ; 
+    padding-bottom : $grid-gutter-width * 0.25 ; 
+}
+
+.navbar-dark
+{
+    a {
+        color : white ; 
+    }
+    
+    a.nav-link.active {
+        color : $lightBlue !important ; 
+        background-color: $gray-700 !important ;
+        border-color:  $gray-700 ;
+    }
+}
+
+.nav-pills
+{
+    a.nav-link.active {
+        color : #FFF !important ; 
+    }
+}
+
+
+.app-navbar-dark-light
+{
+    a{
+        color : white ; 
+    }
+
+    a.nav-link.active {
+        color : $lightBlue !important ;         
+        background-color: $gray-800 !important ;
+        border-color:  $gray-800 ;
+    }
+}
+
+.bg-black {
+    background-color: black !important ;
+}
+
+.bg-alpha-purple { 
+    background-color: $alphaPurple !important;
+}
+
+.bg-alpha-orange { 
+    background-color: $alphaOrange !important;
+}
+
+.bg-alpha-red { 
+    background-color: $alphaRed !important;
+}
+
+
+.bg-alpha-green { 
+    background-color: $alphaGreen !important;
+}
+
+
+.border-black { 
+    border-color: black !important ;
+}
+
+.bg-app-secondary, 
+.bg-app-secondaly {
+    background-color: $gray-700 !important ;
+}
+
+.bg-app-dark-secondary { 
+    background-color: $secondalyDark ;
+}
+
+input.app-input-date{
+    min-width : 8rem ;
+    width : 8rem ;
+    // background-color: white !important;
+    // @include media-breakpoint-up(sm) {
+    //     width : 110px ;
+    // }
+}
+
+input.app-input-time { 
+    min-width:6.5rem ; 
+    width:6.5rem ; 
+}
+
+.table-dark {
+    tr.selected {
+        /* 選択行をハイライト */
+        background-color : #A0A0A0 !important ;
+        transition: all 0.3s ;        
+    } 
+
+    tr.dark-selected { 
+        background-color : #777777 !important ;
+        transition: all 0.3s ;        
+    }
+}
+
+.dark-selected {
+    background-color : #7090BA !important ;
+    transition: all 0.3s ;        
+}
+
+.dark-deep-selected { 
+    background-color : #30508A !important ;
+    transition: all 0.3s ;        
+}
+
+.dark-deep-green-selected { 
+    background-color : #2A8F64 !important ;
+    transition: all 0.3s ;        
+}
+
+.dark-deep-green-selected-01 { 
+    background-color : #2A8F64 !important ;
+    transition: all 0.1s ;
+}
+
+label {
+    font-weight: bold !important ;
+}
+
+.text-lightPrimary {
+    color : $lightBlue ; 
+}
+
+.text-lightgray {
+    color : $lightGray ; 
+}
+
+.text-lightDanger { 
+    color : $lightDangerColor !important ; 
+}
+
+.text-lightSuccess { 
+    color : $lightSuccessColor !important  ; 
+}
+
+.text-white-75 { 
+    color : $white75Color !important ; 
+}
+
+
+/*** PopOVer ****/ 
+
+// .popover-w100 {
+//     max-width:100% !important ; 
+// }
+
+.popover-w35 {
+    max-width:35% !important ; 
+}
+
+
+/***  Context ****/
+.v-context { 
+    z-index: 1100 !important ; 
+
+    a { 
+        color : #9cf ; 
+    }
+}
+
+/* ソートされた項目に矢印を追加 */
+th.sort_asc::after, div.sort_asc::after  {
+    content: "↑";
+}
+
+th.sort_desc::after, div.sort_desc::after {
+    content: "↓";
+}
+
+/* contain Img */
+img.object-contain {
+    width: 100%;
+    height: 100%;
+    object-fit : contain ,
+}

@@ -1,0 +1,149 @@
+
+// Colors
+$lightBlue: #a8d3fb;
+$secondalyDark: rgb(62,68,74) ; 
+
+
+.border-dashed {
+    border-style : dashed !important ; 
+    border-width : 2px !important ; 
+}
+
+
+
+
+input[type=number]{
+    text-align : right !important; 
+}
+
+
+.app-contents{
+    margin-top: 55px;
+    padding-left: 50px ;
+    a { 
+        color : #68b3fb !important ; 
+    }
+
+}
+
+.login-app-contents{
+    padding-top: 55px;
+    padding-left: 50px ;
+}
+
+.app-login-container
+{
+    min-height: 40rem;
+}
+
+.app-sidenav
+{
+    width:50px  ; 
+    padding-top : 55px  ;
+    padding-bottom : 1rem ; 
+
+    z-index: 1005;
+
+    a {
+        color: white ; 
+    }
+
+    .nav-link 
+    {
+        padding : 0.5rem  ; 
+        text-align: center ;
+    }
+}
+
+.app-contents-header-icon
+{
+    flex : 0 0 70px ; 
+    
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.app-contents-header-right-menu
+{
+    display:flex ; 
+    justify-content: flex-end;
+}
+
+
+.app-card-body {
+    background-color: $secondalyDark ;
+}
+
+
+.bg-dark 
+{
+    .btn-link {
+        color : $lightBlue ;        
+    }
+}
+
+
+a.app-inside-link {
+    color : $lightBlue ;    
+}
+
+.bg-lightblue {
+    background-color: $lightBlue;
+}
+
+/* サイズの入力項目*/
+input.app-input-size{
+    width : 6em ; 
+    
+}
+
+.app-text-blue{
+    color : $lightBlue !important ; 
+}
+
+.app-text-red{
+    color : #FA8072 !important ; 
+}
+
+.app-debug {
+    background-color: lightgray;
+    color:black ; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+
+/* 金額の入力項目(8桁まで)*/
+/*
+.app-contents .app-input-price{
+    width:8em!important; 
+}
+*/
+
+
+/* サイズの入力項目(3桁まで) */
+input.app-input-sm-size{
+    width : 5em ; 
+    text-align : right !important; 
+}
+
+
+@media (max-width: 767.98px) {
+
+    .app-contents {
+        padding-left:0 ; 
+    }
+    /*
+    .app-nav-space {
+      display: none;
+    }
+    .app-sidenav
+    {
+        display:none  ; 
+    }
+    */
+
+  }
+  

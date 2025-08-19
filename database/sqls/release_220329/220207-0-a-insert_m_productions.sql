@@ -1,0 +1,3 @@
+INSERT INTO `m_production_modes` (`id`, `m_production_id`, `order_no`, `name`, `prepare_sec_per_qty`, `speed_per_hour`, `speed_unit_m_kv_id`, `description`, `created_m_user_id`, `updated_m_user_id`) VALUES ('231', '32', '24', '18パス片方向高速印刷なし濃度+20', '0', '1.5', '1610001', '2022 2/7 大阪久保様要望にて追加', '4', '4');
+
+INSERT INTO `m_production_mode_links` (`id`, `m_production_mode_id`, `m_production_mode_links_id`, `m_production_mode_links_type`, `created_at`) VALUES ('666', '231', '1', 'App\\Models\\MProcessCategory', '2022-02-07 14:39:26');

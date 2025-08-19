@@ -1,0 +1,16 @@
+@import '~bootstrap/scss/variables';
+
+// Colors
+$lightBlue: #a8d3fb ;
+$lightGray:rgb(190,190,190) ;
+$secondalyDark: rgb(62,68,74) ;
+
+$lightDangerColor: mix(#FFF, $danger, 50) ;
+$lightInfoColor: lightskyblue ;
+$lightSuccessColor: mix(#FFF, $success, 50) ; ;
+$white75Color:rgba(255, 255, 255, 0.5) ;
+
+$alphaPurple : rgba(178, 100, 255, 0.38) ; 
+$alphaOrange : rgba(243, 152, 0, 0.8) ; 
+$alphaRed : rgba(243, 40, 40, 0.4) ; 
+$alphaGreen : rgba(40, 243, 40, 0.4) ; 

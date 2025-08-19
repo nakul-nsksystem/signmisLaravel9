@@ -1,0 +1,24 @@
+Laravel 8 Documentation (Summary)
+
+# Installation
+# Meet Laravel
+# Why Laravel?
+# Your First Laravel Project
+# Initial Configuration
+# Next Steps
+# Laravel The Full Stack Framework
+# Laravel The API Backend
+
+Key features:
+- Progressive, scalable, and community-driven framework
+- Installation via Composer, Sail (Docker), or Laravel Installer
+- Environment-based configuration via .env
+- Directory configuration and structure
+- Routing, views, Eloquent ORM, starter kits, and packages
+- API backend and full stack usage
+
+For full docs, see https://laravel.com/docs/8.x
+
+---
+
+(Extracted content from https://laravel.com/docs/8.x)

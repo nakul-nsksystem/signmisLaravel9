@@ -1,0 +1,2 @@
+INSERT INTO `m_tags` VALUES ('10501', '1', '5', 't_project_files_category_print', '印刷データ', '1340001', '1', null, '2000-01-01 00:00:00', '2000-01-01 00:00:00', null);
+INSERT INTO `m_tags` VALUES ('10502', '2', '5', 't_project_files_category_cut', 'カットデータ', '1340003', '1', null,  '2000-01-01 00:00:00', '2000-01-01 00:00:00', null);

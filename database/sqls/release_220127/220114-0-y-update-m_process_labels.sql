@@ -1,0 +1,24 @@
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_01|dvalue|mkv' WHERE (`id` = '60');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_02|dvalue|mkv' WHERE (`id` = '61');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_03|dvalue|mkv' WHERE (`id` = '69');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_06|dvalue|mkv' WHERE (`id` = '72');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_07|dvalue|mkv' WHERE (`id` = '73');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_08|dvalue|mkv' WHERE (`id` = '80');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_11|dvalue|mkv' WHERE (`id` = '83');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_12|dvalue|mkv' WHERE (`id` = '84');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_13|dvalue|mkv' WHERE (`id` = '91');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_01|dvalue|mkv' WHERE (`id` = '94');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_01|dvalue|mkv' WHERE (`id` = '113');
+
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_16|dvalue|mkv' WHERE (`id` = '153');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_21|dvalue|mkv' WHERE (`id` = '154');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_26|dvalue|mkv' WHERE (`id` = '155');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_31|dvalue|mkv' WHERE (`id` = '156');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_17|dvalue|mkv' WHERE (`id` = '157');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_22|dvalue|mkv' WHERE (`id` = '158');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_27|dvalue|mkv' WHERE (`id` = '159');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_32|dvalue|mkv' WHERE (`id` = '160');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_18|dvalue|mkv' WHERE (`id` = '189');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_23|dvalue|mkv' WHERE (`id` = '190');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_28|dvalue|mkv' WHERE (`id` = '191');
+UPDATE `m_process_labels` SET `formula` = 'm_kv_id_33|dvalue|mkv' WHERE (`id` = '192');

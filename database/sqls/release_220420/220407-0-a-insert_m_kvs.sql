@@ -1,0 +1,1 @@
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `is_user_editable`, `created_m_user_id`, `updated_m_user_id`, `created_at`, `updated_at`) VALUES ('1275005', '1275', '5', '5', '御社へ発送', '0', '0', '0', '2022-03-24 17:06:22', '2022-03-24 17:06:22');

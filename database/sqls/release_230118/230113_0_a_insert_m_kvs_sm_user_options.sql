@@ -1,0 +1,3 @@
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `g_01`, `g_02`, `g_03`, `is_user_editable`, `created_m_user_id`, `updated_m_user_id`) VALUES ('8020801', '8020', '801', '801', '分析', 'search', 'fa-chart-bar', '1', '0', '0', '0');
+INSERT INTO `sm_user_options` (`id`, `key_m_kv_id`, `order_no`, `name`, `application`, `default_value`, `is_user_editable`, `option_01`, `option_02`, `option_03`, `created_at`, `updated_at`) VALUES ('851', '8020801', '851', '仕入分析 チャート非表示デフォルト設定', 'analyze', '0', '1', 'boolean', '[\"isNotDisplayChart\"]', '[\"isNotDisplayChart\"]', '2023-01-13 18:30:22', '2023-01-13 18:30:22');
+UPDATE `m_kvs` SET `kv_name` = 'デフォルト値', `g_01` = 'default',`g_02` = 'fa-cog' WHERE (`id` = '8020801');

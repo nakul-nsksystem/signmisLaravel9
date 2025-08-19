@@ -1,0 +1,10 @@
+INSERT INTO `m_role_key_categories` (`id`, `order_no`, `name`, `explanation`) VALUES ('11', '58', 'report-role', '集計帳票関係');
+INSERT INTO `m_role_keys` (`id`, `m_role_key_category_id`, `order_no`, `name`, `explanation`, `system_flg`, `memo`) VALUES ('26', '11', '410', 'projects_report-privilege', '物件帳票権限', '1', '10~:アクセス可能 20:~担当者ログインユーザー以外検索可能 100:全権');
+INSERT INTO `m_role_keys` (`id`, `m_role_key_category_id`, `order_no`, `name`, `explanation`, `system_flg`, `memo`) VALUES ('27', '11', '420', 'sales_report-privilege', '売掛帳票権限', '1', '10~:アクセス可能');
+INSERT INTO `m_role_keys` (`id`, `m_role_key_category_id`, `order_no`, `name`, `explanation`, `system_flg`, `memo`) VALUES ('28', '11', '430', 'purchases_report-privilege', '買掛帳票権限', '1', '10~:アクセス可能');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('6', '26', '100');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('6', '27', '100');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('6', '28', '100');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('8', '26', '10');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('18', '27', '10');
+INSERT INTO `m_role_details` (`m_role_id`, `m_role_key_id`, `control_level`) VALUES ('18', '28', '10');

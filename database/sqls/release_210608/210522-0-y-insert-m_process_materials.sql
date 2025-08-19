@@ -1,0 +1,3 @@
+INSERT INTO `m_process_materials` VALUES ('54', '27', '1', '消耗品', null, '1', 'n_10', '9010001', null, null, null, null, '個', null, null, '2021-05-20 14:27:02', '2021-05-20 14:27:02');
+INSERT INTO `m_process_materials` VALUES ('55', '25', '1', 'エッジバンド', 'is_01', '1', 'n_10', '9010003', 'n_03', null, null, null, null, null, null, '2021-05-22 18:25:14', '2021-05-22 18:25:14');
+INSERT INTO `m_process_materials` VALUES ('56', '25', '2', 'その他消耗品', null, '1', 'n_11', '9010001', null, null, null, null, null, null, null, '2021-05-22 18:26:53', '2021-05-22 18:26:53');

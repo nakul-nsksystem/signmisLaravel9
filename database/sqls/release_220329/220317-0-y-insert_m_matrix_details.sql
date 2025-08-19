@@ -1,0 +1,1 @@
+INSERT INTO `m_matrix_details` VALUES ('197', '33', '1', '2170001', '袋 片方ころし - ミシン１本', null, null, null, null, null, null, '8000.0000', null, null, null, null, null, '0', '0', '2022-03-17 17:42:50', '2022-03-17 17:42:50', null);

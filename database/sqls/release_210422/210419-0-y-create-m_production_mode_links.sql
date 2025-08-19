@@ -1,0 +1,60 @@
+
+-- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
+--
+-- Host: localhost    Database: signmis
+-- ------------------------------------------------------
+-- Server version	8.0.19
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `m_production_mode_links`
+--
+
+DROP TABLE IF EXISTS `m_production_mode_links`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `m_production_mode_links` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `m_production_mode_id` int NOT NULL,
+  `m_production_mode_links_id` int NOT NULL COMMENT 'リンクID',
+  `m_production_mode_links_type` varchar(1024) NOT NULL COMMENT 'リンクモデル \n生産先モードと工程カテゴリーのリンク　MProcesstCategory',
+  `created_m_user_id` int DEFAULT NULL COMMENT '作成担当者',
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '作成日',
+  PRIMARY KEY (`id`),
+  KEY `fk_m_production_mode_links_m_production_mode_id_idx` (`m_production_mode_id`),
+  KEY `fk_m_production_mode_links_created_m_user_id_idx` (`created_m_user_id`),
+  CONSTRAINT `fk_m_production_mode_links_created_m_user_id` FOREIGN KEY (`created_m_user_id`) REFERENCES `m_users` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `fk_m_production_mode_links_m_production_mode_id` FOREIGN KEY (`m_production_mode_id`) REFERENCES `m_production_modes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=623 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci COMMENT='リンクモデル \r\n生産先と工程カテゴリーのリンク　MProcesstCategory';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `m_production_mode_links`
+--
+
+LOCK TABLES `m_production_mode_links` WRITE;
+/*!40000 ALTER TABLE `m_production_mode_links` DISABLE KEYS */;
+INSERT INTO `m_production_mode_links` VALUES (417,37,4,'App\\Models\\MProcessCategory',0,'2020-11-26 19:57:29'),(418,38,4,'App\\Models\\MProcessCategory',0,'2020-11-26 19:57:29'),(442,14,4,'App\\Models\\MProcessCategory',0,NULL),(443,17,4,'App\\Models\\MProcessCategory',0,NULL),(444,20,4,'App\\Models\\MProcessCategory',0,NULL),(445,14,4,'App\\Models\\MProcessCategory',0,NULL),(446,17,4,'App\\Models\\MProcessCategory',0,NULL),(447,20,4,'App\\Models\\MProcessCategory',0,NULL),(449,15,8,'App\\Models\\MProcessCategory',NULL,NULL),(450,16,8,'App\\Models\\MProcessCategory',NULL,NULL),(457,31,7,'App\\Models\\MProcessCategory',NULL,NULL),(458,32,7,'App\\Models\\MProcessCategory',NULL,NULL),(459,33,7,'App\\Models\\MProcessCategory',NULL,NULL),(461,63,22,'App\\Models\\MProcessCategory',NULL,NULL),(462,64,22,'App\\Models\\MProcessCategory',NULL,NULL),(463,65,22,'App\\Models\\MProcessCategory',NULL,NULL),(464,66,9,'App\\Models\\MProcessCategory',NULL,NULL),(465,24,9,'App\\Models\\MProcessCategory',NULL,NULL),(467,25,9,'App\\Models\\MProcessCategory',NULL,NULL),(468,67,9,'App\\Models\\MProcessCategory',NULL,NULL),(469,68,9,'App\\Models\\MProcessCategory',NULL,NULL),(470,63,9,'App\\Models\\MProcessCategory',NULL,NULL),(471,64,9,'App\\Models\\MProcessCategory',NULL,NULL),(472,65,9,'App\\Models\\MProcessCategory',NULL,NULL),(473,22,15,'App\\Models\\MProcessCategory',NULL,NULL),(474,22,5,'App\\Models\\MProcessCategory',NULL,NULL),(475,69,15,'App\\Models\\MProcessCategory',NULL,NULL),(476,72,19,'App\\Models\\MProcessCategory',NULL,NULL),(477,73,19,'App\\Models\\MProcessCategory',NULL,NULL),(478,74,19,'App\\Models\\MProcessCategory',NULL,NULL),(479,75,15,'App\\Models\\MProcessCategory',NULL,NULL),(480,76,15,'App\\Models\\MProcessCategory',NULL,NULL),(481,21,15,'App\\Models\\MProcessCategory',NULL,NULL),(482,21,5,'App\\Models\\MProcessCategory',NULL,NULL),(483,23,15,'App\\Models\\MProcessCategory',NULL,NULL),(484,23,5,'App\\Models\\MProcessCategory',NULL,NULL),(486,69,8,'App\\Models\\MProcessCategory',NULL,NULL),(487,76,8,'App\\Models\\MProcessCategory',NULL,NULL),(488,75,8,'App\\Models\\MProcessCategory',NULL,NULL),(489,78,14,'App\\Models\\MProcessCategory',NULL,NULL),(490,79,13,'App\\Models\\MProcessCategory',NULL,NULL),(491,80,14,'App\\Models\\MProcessCategory',NULL,NULL),(492,81,14,'App\\Models\\MProcessCategory',NULL,NULL),(494,82,13,'App\\Models\\MProcessCategory',NULL,NULL),(495,83,13,'App\\Models\\MProcessCategory',NULL,NULL),(496,27,3,'App\\Models\\MProcessCategory',NULL,NULL),(497,26,3,'App\\Models\\MProcessCategory',NULL,NULL),(498,43,3,'App\\Models\\MProcessCategory',NULL,NULL),(499,69,5,'App\\Models\\MProcessCategory',NULL,NULL),(500,85,5,'App\\Models\\MProcessCategory',NULL,NULL),(501,86,5,'App\\Models\\MProcessCategory',NULL,NULL),(502,87,5,'App\\Models\\MProcessCategory',NULL,NULL),(503,75,5,'App\\Models\\MProcessCategory',NULL,NULL),(504,76,5,'App\\Models\\MProcessCategory',NULL,NULL),(505,51,7,'App\\Models\\MProcessCategory',NULL,NULL),(506,52,7,'App\\Models\\MProcessCategory',NULL,NULL),(507,49,7,'App\\Models\\MProcessCategory',NULL,NULL),(508,50,7,'App\\Models\\MProcessCategory',NULL,NULL),(509,47,7,'App\\Models\\MProcessCategory',NULL,NULL),(510,48,7,'App\\Models\\MProcessCategory',NULL,NULL),(511,69,20,'App\\Models\\MProcessCategory',NULL,NULL),(512,76,20,'App\\Models\\MProcessCategory',NULL,NULL),(513,75,20,'App\\Models\\MProcessCategory',NULL,NULL),(514,44,3,'App\\Models\\MProcessCategory',NULL,NULL),(515,13,1,'App\\Models\\MProcessCategory',NULL,NULL),(516,89,1,'App\\Models\\MProcessCategory',NULL,NULL),(517,90,1,'App\\Models\\MProcessCategory',NULL,NULL),(518,91,1,'App\\Models\\MProcessCategory',NULL,NULL),(519,92,1,'App\\Models\\MProcessCategory',NULL,NULL),(520,95,1,'App\\Models\\MProcessCategory',NULL,NULL),(521,94,1,'App\\Models\\MProcessCategory',NULL,NULL),(522,93,1,'App\\Models\\MProcessCategory',NULL,NULL),(523,97,1,'App\\Models\\MProcessCategory',NULL,NULL),(524,96,1,'App\\Models\\MProcessCategory',NULL,NULL),(525,98,1,'App\\Models\\MProcessCategory',NULL,NULL),(526,99,1,'App\\Models\\MProcessCategory',NULL,NULL),(527,100,1,'App\\Models\\MProcessCategory',NULL,NULL),(528,101,1,'App\\Models\\MProcessCategory',NULL,NULL),(530,103,1,'App\\Models\\MProcessCategory',NULL,NULL),(531,104,1,'App\\Models\\MProcessCategory',NULL,NULL),(532,105,1,'App\\Models\\MProcessCategory',NULL,NULL),(533,106,1,'App\\Models\\MProcessCategory',NULL,NULL),(534,107,1,'App\\Models\\MProcessCategory',NULL,NULL),(535,108,1,'App\\Models\\MProcessCategory',NULL,NULL),(536,109,1,'App\\Models\\MProcessCategory',NULL,NULL),(537,110,1,'App\\Models\\MProcessCategory',NULL,NULL),(538,111,1,'App\\Models\\MProcessCategory',NULL,NULL),(539,113,1,'App\\Models\\MProcessCategory',NULL,NULL),(540,112,1,'App\\Models\\MProcessCategory',NULL,NULL),(541,57,8,'App\\Models\\MProcessCategory',NULL,NULL),(542,58,8,'App\\Models\\MProcessCategory',NULL,NULL),(543,59,8,'App\\Models\\MProcessCategory',NULL,NULL),(544,114,5,'App\\Models\\MProcessCategory',NULL,NULL),(545,115,5,'App\\Models\\MProcessCategory',NULL,NULL),(546,116,5,'App\\Models\\MProcessCategory',NULL,NULL),(547,122,1,'App\\Models\\MProcessCategory',NULL,NULL),(548,135,1,'App\\Models\\MProcessCategory',NULL,NULL),(549,136,1,'App\\Models\\MProcessCategory',NULL,NULL),(550,137,1,'App\\Models\\MProcessCategory',NULL,NULL),(551,138,1,'App\\Models\\MProcessCategory',NULL,NULL),(552,139,1,'App\\Models\\MProcessCategory',NULL,NULL),(553,143,1,'App\\Models\\MProcessCategory',NULL,NULL),(554,140,1,'App\\Models\\MProcessCategory',NULL,NULL),(555,141,1,'App\\Models\\MProcessCategory',NULL,NULL),(556,142,1,'App\\Models\\MProcessCategory',NULL,NULL),(557,144,1,'App\\Models\\MProcessCategory',NULL,NULL),(558,145,1,'App\\Models\\MProcessCategory',NULL,NULL),(559,146,1,'App\\Models\\MProcessCategory',NULL,NULL),(560,147,1,'App\\Models\\MProcessCategory',NULL,NULL),(561,148,1,'App\\Models\\MProcessCategory',NULL,NULL),(562,149,1,'App\\Models\\MProcessCategory',NULL,NULL),(563,150,1,'App\\Models\\MProcessCategory',NULL,NULL),(564,151,1,'App\\Models\\MProcessCategory',NULL,NULL),(565,152,1,'App\\Models\\MProcessCategory',NULL,NULL),(566,153,1,'App\\Models\\MProcessCategory',NULL,NULL),(567,154,1,'App\\Models\\MProcessCategory',NULL,NULL),(568,155,1,'App\\Models\\MProcessCategory',NULL,NULL),(569,157,1,'App\\Models\\MProcessCategory',NULL,NULL),(570,158,1,'App\\Models\\MProcessCategory',NULL,NULL),(571,159,1,'App\\Models\\MProcessCategory',NULL,NULL),(572,60,8,'App\\Models\\MProcessCategory',NULL,NULL),(573,61,8,'App\\Models\\MProcessCategory',NULL,NULL),(574,62,8,'App\\Models\\MProcessCategory',NULL,NULL),(575,39,8,'App\\Models\\MProcessCategory',NULL,NULL),(576,40,8,'App\\Models\\MProcessCategory',NULL,NULL),(577,41,8,'App\\Models\\MProcessCategory',NULL,NULL),(578,42,8,'App\\Models\\MProcessCategory',NULL,NULL),(579,160,8,'App\\Models\\MProcessCategory',NULL,NULL),(580,161,8,'App\\Models\\MProcessCategory',NULL,NULL),(581,162,8,'App\\Models\\MProcessCategory',NULL,NULL),(582,163,8,'App\\Models\\MProcessCategory',NULL,NULL),(583,164,8,'App\\Models\\MProcessCategory',NULL,NULL),(584,166,8,'App\\Models\\MProcessCategory',NULL,NULL),(585,167,8,'App\\Models\\MProcessCategory',NULL,NULL),(586,168,8,'App\\Models\\MProcessCategory',NULL,NULL),(587,169,8,'App\\Models\\MProcessCategory',NULL,NULL),(588,170,8,'App\\Models\\MProcessCategory',NULL,NULL),(589,171,8,'App\\Models\\MProcessCategory',NULL,NULL),(590,172,8,'App\\Models\\MProcessCategory',NULL,NULL),(591,165,8,'App\\Models\\MProcessCategory',NULL,NULL),(592,173,8,'App\\Models\\MProcessCategory',NULL,NULL),(593,174,8,'App\\Models\\MProcessCategory',NULL,NULL),(594,175,8,'App\\Models\\MProcessCategory',NULL,NULL),(595,176,8,'App\\Models\\MProcessCategory',NULL,NULL),(596,177,8,'App\\Models\\MProcessCategory',NULL,NULL),(597,178,8,'App\\Models\\MProcessCategory',NULL,NULL),(598,179,8,'App\\Models\\MProcessCategory',NULL,NULL),(599,180,8,'App\\Models\\MProcessCategory',NULL,NULL),(600,181,8,'App\\Models\\MProcessCategory',NULL,NULL),(601,182,8,'App\\Models\\MProcessCategory',NULL,NULL),(602,183,8,'App\\Models\\MProcessCategory',NULL,NULL),(603,184,8,'App\\Models\\MProcessCategory',NULL,NULL),(604,185,8,'App\\Models\\MProcessCategory',NULL,NULL),(605,186,8,'App\\Models\\MProcessCategory',NULL,NULL),(606,198,8,'App\\Models\\MProcessCategory',NULL,NULL),(607,199,8,'App\\Models\\MProcessCategory',NULL,NULL),(608,188,8,'App\\Models\\MProcessCategory',NULL,NULL),(609,189,8,'App\\Models\\MProcessCategory',NULL,NULL),(610,190,8,'App\\Models\\MProcessCategory',NULL,NULL),(611,191,8,'App\\Models\\MProcessCategory',NULL,NULL),(612,192,8,'App\\Models\\MProcessCategory',NULL,NULL),(613,193,8,'App\\Models\\MProcessCategory',NULL,NULL),(614,194,8,'App\\Models\\MProcessCategory',NULL,NULL),(615,195,8,'App\\Models\\MProcessCategory',NULL,NULL),(616,196,8,'App\\Models\\MProcessCategory',NULL,NULL),(617,197,8,'App\\Models\\MProcessCategory',NULL,NULL),(618,187,8,'App\\Models\\MProcessCategory',NULL,NULL),(619,200,1,'App\\Models\\MProcessCategory',NULL,NULL),(620,201,23,'App\\Models\\MProcessCategory',NULL,NULL),(621,202,23,'App\\Models\\MProcessCategory',NULL,NULL),(622,203,23,'App\\Models\\MProcessCategory',NULL,NULL);
+/*!40000 ALTER TABLE `m_production_mode_links` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-04-19 16:16:25

@@ -1,0 +1,16 @@
+ALTER TABLE `t_project_files` 
+DROP COLUMN `t_product_id`,
+ADD COLUMN `uid` INT NULL DEFAULT NULL COMMENT '製品と紐づけ用id' AFTER `id`,
+ADD COLUMN `src_filename` VARCHAR(255) NULL DEFAULT NULL COMMENT 'ファイル名' AFTER `filename`,
+ADD COLUMN `filesize` BIGINT NULL DEFAULT NULL COMMENT 'ファイルサイズ' AFTER `extension`,
+ADD COLUMN `created_m_user_id` INT NULL DEFAULT NULL COMMENT '作成者' AFTER `filesize`,
+ADD COLUMN `updated_m_user_id` INT NULL DEFAULT NULL AFTER `created_m_user_id`,
+ADD COLUMN `deleted_at` DATETIME NULL DEFAULT NULL COMMENT '削除日' AFTER `updated_at`,
+CHANGE COLUMN `id` `id` INT NOT NULL AUTO_INCREMENT COMMENT 'id' ,
+CHANGE COLUMN `t_project_id` `t_project_id` INT NULL DEFAULT NULL COMMENT 't_project_id' ,
+CHANGE COLUMN `t_project_mail_id` `t_project_mail_id` INT NULL DEFAULT NULL COMMENT 't_project_mail_id' ,
+CHANGE COLUMN `filename` `filename` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci' NULL DEFAULT NULL COMMENT 'path用ファイル名' ,
+CHANGE COLUMN `filepath` `filepath` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci' NULL DEFAULT NULL COMMENT 'ファイルパス' ,
+CHANGE COLUMN `extension` `extension` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_520_ci' NULL DEFAULT NULL COMMENT '拡張子' ,
+CHANGE COLUMN `created_at` `created_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP COMMENT '作成日' ,
+CHANGE COLUMN `updated_at` `updated_at` DATETIME NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新日' ;

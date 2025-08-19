@@ -1,0 +1,1 @@
+INSERT INTO `m_tags` (`id`, `order_no`, `m_tag_category_id`, `tag_key`, `tag_name`, `is_user_editable`, `created_at`, `updated_at`) VALUES ('10309', '9', '3', 'm_materials-category_ut_roll', '貼り対象(ロール)', '0', '2000-01-01 00:00:00', '2000-01-01 00:00:00');

@@ -1,0 +1,1 @@
+INSERT INTO `m_process_outsources` VALUES ('9', '10', '1', '外注', null, null, 'outsource_cost_by_input', '9010001', 'outsource_qty', null, null, '0', null, '2021-05-26 14:54:57', '2021-05-26 16:42:41');

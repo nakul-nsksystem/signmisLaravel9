@@ -1,0 +1,20 @@
+UPDATE `m_kvs` SET `g_07` = '0', `g_10` = 'http://inquire.trc.ssx.seino.co.jp/inquire/main.jsp' WHERE (`id` = '3710005');
+UPDATE `m_kvs` SET `g_07` = '0', `g_10` = 'http://inquire.trc.ssx.seino.co.jp/inquire/main.jsp' WHERE (`id` = '3710009');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710001');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710002');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710003');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710004');
+UPDATE `m_kvs` SET `g_07` = '1' WHERE (`id` = '3710006');
+UPDATE `m_kvs` SET `g_07` = '1' WHERE (`id` = '3710007');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710008');
+UPDATE `m_kvs` SET `g_07` = '1' WHERE (`id` = '3710010');
+UPDATE `m_kvs` SET `g_07` = '1' WHERE (`id` = '3710011');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710012');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710021');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710023');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710024');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710030');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710031');
+UPDATE `m_kvs` SET `g_07` = '0' WHERE (`id` = '3710022');
+
+UPDATE `m_kv_categories` SET `system_memo` = 'g_01:施工or納品,g_02:is着日,g_03:is個口数,g_04:is納品先情報必要,g_05:is荷主情報必要,g_06:is個口数,g_07:追跡Url生成フラグ,g_09:文字色,g_10:送り状追跡Url' WHERE (`id` = '3710');

@@ -1,0 +1,1 @@
+INSERT INTO `m_product_categories` (`id`, `order_no`, `cd`, `name`, `is_production`, `is_able_media_separate`, `is_able_media_separate_both_side`, `is_not_input_size_needed`, `is_board`, `is_delivery_needed`, `permit_negative_qty`, `is_direction_sheet`) VALUES ('66', '51', 'c51', 'プリスマ商品', '0', '0', '0', '1', '0', '0', '0', '0');

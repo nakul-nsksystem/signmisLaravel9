@@ -1,0 +1,17 @@
+UPDATE `m_kvs` SET `order_no` = '11' WHERE (`id` = '3710005');
+UPDATE `m_kvs` SET `order_no` = '12' WHERE (`id` = '3710006');
+UPDATE `m_kvs` SET `order_no` = '13' WHERE (`id` = '3710007');
+UPDATE `m_kvs` SET `order_no` = '19' WHERE (`id` = '3710008');
+UPDATE `m_kvs` SET `order_no` = '21' WHERE (`id` = '3710009');
+UPDATE `m_kvs` SET `order_no` = '22' WHERE (`id` = '3710010');
+UPDATE `m_kvs` SET `order_no` = '23' WHERE (`id` = '3710011');
+UPDATE `m_kvs` SET `order_no` = '29' WHERE (`id` = '3710012');
+UPDATE `m_kvs` SET `order_no` = '30' WHERE (`id` = '3710016');
+UPDATE `m_kvs` SET `order_no` = '41' WHERE (`id` = '3710021');
+UPDATE `m_kvs` SET `order_no` = '42' WHERE (`id` = '3710022');
+UPDATE `m_kvs` SET `order_no` = '43' WHERE (`id` = '3710023');
+UPDATE `m_kvs` SET `order_no` = '44' WHERE (`id` = '3710024');
+UPDATE `m_kvs` SET `order_no` = '51' WHERE (`id` = '3710030');
+UPDATE `m_kvs` SET `order_no` = '61' WHERE (`id` = '3710031');
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `g_01`, `g_02`, `g_03`, `g_04`, `g_05`, `g_06`, `g_07`, `g_10`, `is_user_editable`, `created_m_user_id`, `updated_m_user_id`, `created_at`, `updated_at`) VALUES ('3710032', '3710', '14', '32', '送り (ECO配)', 'delivery', '1', '1', '1', '0', '1', '1', 'https://www.ecohai.co.jp/cargo_tracking/search/', '0', '0', '0', '2000-01-01 00:00:00', '2000-01-01 00:00:00');
+INSERT INTO `m_kvs` (`id`, `m_kv_category_id`, `order_no`, `kv_cd`, `kv_name`, `g_01`, `g_02`, `g_03`, `g_04`, `g_05`, `g_06`, `g_07`, `g_10`, `is_user_editable`, `created_m_user_id`, `updated_m_user_id`, `created_at`, `updated_at`) VALUES ('3710033', '3710', '24', '33', '直送（ECO配）', 'delivery', '1', '1', '1', '1', '1', '1', 'https://www.ecohai.co.jp/cargo_tracking/search/', '0', '0', '0', '2020-10-01 20:29:10', '2020-10-01 20:29:10');

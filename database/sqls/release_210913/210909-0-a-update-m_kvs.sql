@@ -1,0 +1,1 @@
+UPDATE `m_kvs` SET `order_no` = '15', `kv_cd` = '15' WHERE (`id` = '1270012');

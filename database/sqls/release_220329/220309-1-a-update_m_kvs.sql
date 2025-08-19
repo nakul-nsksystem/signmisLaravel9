@@ -1,0 +1,19 @@
+UPDATE `m_kvs` SET `g_01` = 'construction' WHERE (`id` = '1270003');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270001');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270002');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270004');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270005');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270006');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270007');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270008');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270009');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270010');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270011');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270012');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270021');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270022');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270023');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270024');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270030');
+UPDATE `m_kvs` SET `g_01` = 'delivery' WHERE (`id` = '1270031');
+

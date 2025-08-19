@@ -1,0 +1,1 @@
+Alter table m_delivery_destinations add unique (m_customer_id, delivery_destination_m_customer_id) ;

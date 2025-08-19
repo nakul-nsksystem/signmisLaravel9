@@ -1,0 +1,3 @@
+ALTER TABLE `t_project_mails` 
+ADD COLUMN `uid` INT NULL DEFAULT NULL COMMENT '紐づけ用uid' AFTER `id`,
+ADD COLUMN `mailname` VARCHAR(255) NULL DEFAULT NULL COMMENT 'emlファイル名' AFTER `mailpath`;

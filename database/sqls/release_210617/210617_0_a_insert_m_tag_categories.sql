@@ -1,0 +1,1 @@
+INSERT INTO `m_tag_categories` VALUES ('5', '5', 't_project_files_category', '物件添付ファイルタグ', null , '0', '2000-01-01 00:00:00', '2000-01-01 00:00:00', null);
