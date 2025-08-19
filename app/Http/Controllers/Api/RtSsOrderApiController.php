@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Cache;
 
 
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Ftp as Adapter;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 

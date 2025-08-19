@@ -42,7 +42,7 @@ return [
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
-            'local_domain' => env('MAIL_EHLO_DOMAIN'),
+            'auth_mode' => null,
             // 'stream' => [
             //         'ssl' => [
             //         'allow_self_signed' => true,
@@ -61,7 +61,7 @@ return [
             'username' => env('SS_MAIL_USERNAME'),
             'password' => env('SS_MAIL_PASSWORD'),
             'timeout' => null,
-            'local_domain' => env('SS_MAIL_EHLO_DOMAIN'),
+            'auth_mode' => null,
             // 'stream' => [
             //         'ssl' => [
             //         'allow_self_signed' => true,
@@ -86,7 +86,7 @@ return [
 
         'sendmail' => [
             'transport' => 'sendmail',
-            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
+            'path' => '/usr/sbin/sendmail -bs',
         ],
 
         'log' => [

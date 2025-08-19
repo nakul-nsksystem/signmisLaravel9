@@ -1,10 +1,10 @@
 {
     "client":"mysql",
     "connection": {
-      "host": "192.168.0.",
+      "host": "192.168.0.47",
       "user": "root",
       "password": "mysql",
-      "database" : "_signmis_"
+      "database" : "_signmis_mike"
     },
 
     "typeOverrides": {
