@@ -7,7 +7,3 @@
 - Update mail configuration for Symfony Mailer.
 - Bump dev tools and auxiliary packages for Laravel 9 compatibility.
 - Add Laravel 9 smoke test suite to validate boot, routing, database, storage, mail, and queue operations.
-
-- Restore missing public entrypoint so containers serve the application correctly.
-- Pin Vuex 3 to resolve npm peer dependency conflict with Vue 2.
-
