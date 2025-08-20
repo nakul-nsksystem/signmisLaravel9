@@ -57,9 +57,9 @@ RUN apt-get install -y fontconfig xfonts-75dpi
 # RUN wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.stretch_amd64.deb && \
 # 		dpkg -i wkhtmltox_0.12.6-1.stretch_amd64.deb && \
 #     rm wkhtmltox_0.12.6-1.stretch_amd64.deb
-RUN wget -q http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.1_1.1.1n-0+deb10u6_amd64.deb && \
-    dpkg -i libssl1.1_1.1.1n-0+deb10u6_amd64.deb && \
-    rm libssl1.1_1.1.1n-0+deb10u6_amd64.deb
+RUN wget -q https://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.1_1.1.1w-0+deb11u3_amd64.deb && \
+    dpkg -i libssl1.1_1.1.1w-0+deb11u3_amd64.deb && \
+    rm libssl1.1_1.1.1w-0+deb11u3_amd64.deb
 
 RUN wget -q  https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.bullseye_amd64.deb && \
     dpkg -i wkhtmltox_0.12.6.1-2.bullseye_amd64.deb && \
